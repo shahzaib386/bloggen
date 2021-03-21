@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blogen</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0">
+    <div class="container">
+      <a class="navbar-brand" href="#">Blogen</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item px-2">
+            <a class="nav-link" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link active" href="post.html">Posts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="category.html">Categories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="user.html">Users</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+
+
+          <li class="nav-item dropdown mr-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i> Welcome <%=name%>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="login.html"> <i class="fas fa-user-circle"></i> Profile</a>
+              <a class="dropdown-item" href="setting.html"> <i class="fas fa-cog"></i> Settings</a>
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> <i class="fas fa-user-times"></i> logout</a>
+          </li>
+
+</ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+<section id="main-header" class="py-2 bg-primary text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1> <i class="fas fa-pencil-alt"></i> Posts </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="search" class="py-4 bg-light mb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ml-auto">
+        <div class="input-group">
+          <input type="text" name="" value="" class="form-control" placeholder="Search posts...">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-primary" name="button">Search</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="dashboard" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header">
+            <h4>Latests Posts</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="bg-dark text-white">
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Post One</td>
+                <td>Web Development</td>
+                <td>May 10 2020</td>
+                <td> <a href="details.html" class="btn btn-secondary"> <i class="fas fa-angle-double-right"></i></a> Details</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Post two</td>
+                <td>Web Development</td>
+                <td>May 10 2020</td>
+                <td> <a href="details.html" class="btn btn-secondary"> <i class="fas fa-angle-double-right"></i></a> Details</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Post three</td>
+                <td>Web Development</td>
+                <td>May 10 2020</td>
+                <td> <a href="details.html" class="btn btn-secondary"> <i class="fas fa-angle-double-right"></i></a> Details</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Post four</td>
+                <td>Web Development</td>
+                <td>May 10 2020</td>
+                <td> <a href="details.html" class="btn btn-secondary"> <i class="fas fa-angle-double-right"></i></a> Details</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Post five</td>
+                <td>Web Development</td>
+                <td>May 10 2020</td>
+                <td> <a href="details.html" class="btn btn-secondary"> <i class="fas fa-angle-double-right"></i></a> Details</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Post six</td>
+                <td>Web Development</td>
+                <td>May 10 2020</td>
+                <td> <a href="details.html" class="btn btn-secondary"> <i class="fas fa-angle-double-right"></i></a> Details</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Post seven</td>
+                <td>Web Development</td>
+                <td>May 10 2020</td>
+                <td> <a href="details.html" class="btn btn-secondary"> <i class="fas fa-angle-double-right"></i></a> Details</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<nav class="ml-4 mb-4">
+  <div class="container">
+    <ul class="pagination">
+      <li class="page-item disabled">
+      <a href="#" class="page-link">Previous</a>
+      </li>
+      <li class="page-item active">
+      <a href="#" class="page-link">1</a>
+      </li>
+      <li class="page-item">
+      <a href="#" class="page-link">2</a>
+      </li>
+      <li class="page-item">
+      <a href="#" class="page-link">3</a>
+      </li>
+      <li class="page-item">
+      <a href="#" class="page-link">Next</a>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>
+
+
+
+
+<footer id="main-footer" class=" bg-dark text-light text-center p-5 mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> Blogan</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
+  <script>
+
+
+$('#year').text(new Date().getFullYear());
+
+  </script>
+
+</body>
+
+</html>

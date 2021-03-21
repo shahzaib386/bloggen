@@ -1,0 +1,56 @@
+.edit{
+  display: none;
+}
+.signup
+{
+  display: none ;
+}
+
+.incorrect{
+  display: none;
+}
+.account
+{
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+
+  .navbar-brand
+{
+  position: relative;
+
+  left: 0;
+  text-align: right;
+  margin: auto;
+}
+  .navbar-toggler
+  {
+position: relative;
+    margin-right: auto;
+  }
+}
+.fa-eye-slash
+{
+  color: #333;
+
+}
+.darktheme
+{
+  background-color: #000000;
+ color: #fff;
+}
+.darknav
+{
+  background-color: #000000;
+  color: #6200EE;
+}
+.darkheader
+{
+  background-color: #6200EE;
+  color: #fff;
+}
+.darkcard
+{
+  background-color: #212121;
+ color: #fff;
+}

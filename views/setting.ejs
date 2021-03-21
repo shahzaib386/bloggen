@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blogen</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body class="<%=htmlbody%>">
+
+  <nav class="navbar navbar-expand-lg <%=navdark%> p-0">
+    <div class="container">
+      <a class="navbar-brand" href="#">Blogen</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active px-2">
+            <a class="nav-link active" href="dashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="post.html">Posts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="category.html">Categories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="user.html">Users</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+
+
+          <li class="nav-item dropdown mr-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i> Welcome <%=name%>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="login.html"> <i class="fas fa-user-circle"></i> Profile</a>
+              <a class="dropdown-item" href="setting.html"> <i class="fas fa-cog"></i> Settings</a>
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> <i class="fas fa-user-times"></i> logout</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <section id="main-header" class="py-2 <%=headerdark%>">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1> <i class="fas fa-cog"></i> Settings</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="action" class="py-4  mb-4 <%=dark%>">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="dashboard.html" class="btn <%=darkbutton%> btn-block mb-2"> <i class="fas fa-arrow-left"></i>
+            Back to Dasboard </a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="setting" class="py-5 <%=bodydark%>">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card <%=cardborder%>">
+            <div class="card-header <%=cardheaddark%>">
+              <h4>Edit Settings</h4>
+            </div>
+            <div class="card-body <%=cardbodydark%>">
+              <form action="/setting.html" method="post">
+                <fieldset class="form-group">
+                  <legend>Theme</legend>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" name="theme" value="light" class="form-check-input" <%=lightchecked%>  > Light Mode
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="radio" name="theme" value="dark" class="form-check-input" <%=darkchecked%> > Dark Mode
+                    </label>
+                  </div>
+
+                </fieldset>
+                <div class="form-group">
+                  <button type="submit"  class="btn btn-success btn-block mb-2"> <i class="fas fa-check"></i> Save changes </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class=" bg-dark text-light text-center p-5 mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> Blogan</p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+
+
+<script src="/js/blogen.js" charset="utf-8"></script>
+
+<script src="blogendata.js" charset="utf-8"></script>
+  <script>
+    CKEDITOR.replace('editor1');
+
+    $('#year').text(new Date().getFullYear());
+  </script>
+
+</body>
+
+</html>
